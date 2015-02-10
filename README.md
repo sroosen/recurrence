@@ -5,7 +5,7 @@ A library that provides basic recurrence functionaltity.
 ## Usage
 
 ```csharp
-var occurrences = Recur.EveryWeek().StartingToday();
+var occurrences = Recur.Weekly().StartingToday();
 
 foreach (var occurrence in occurrences)
 {
