@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Recurrence.Tests")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Tests for the Recurrence library: a simple recurrence library for .NET")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Recurrence.Tests")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyCompany("Stijn Roosen")]
+[assembly: AssemblyProduct("Recurrence")]
+[assembly: AssemblyCopyright("Copyright © Stijn Roosen 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

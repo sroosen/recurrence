@@ -43,7 +43,7 @@
     <Compile Include="OccurrenceEnumerator.cs" />
     <Compile Include="Recur.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RecurrenceType.cs" />
+    <Compile Include="IRecurrenceType.cs" />
     <Compile Include="MonthlyRecurrenceType.cs" />
     <Compile Include="WeeklyRecurrenceType.cs" />
   </ItemGroup>

@@ -6,10 +6,10 @@ namespace Recurrence
 {
     public class OccurrenceEnumerable : IEnumerable<DateTime>
     {
-        private readonly RecurrenceType _recurrenceType;
+        private readonly IRecurrenceType _recurrenceType;
         private DateTime _startDate;
 
-        public OccurrenceEnumerable(RecurrenceType recurrenceType)
+        public OccurrenceEnumerable(IRecurrenceType recurrenceType)
         {
             if (recurrenceType == null)
                 throw new ArgumentNullException("recurrenceType");

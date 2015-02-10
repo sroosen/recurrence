@@ -2,9 +2,9 @@
 
 namespace Recurrence
 {
-    public class MonthlyRecurrenceType : RecurrenceType
+    public class MonthlyRecurrenceType : IRecurrenceType
     {
-        public override DateTime GetOccurrence(DateTime startDate, int occurrenceNumber)
+        public DateTime GetOccurrence(DateTime startDate, int occurrenceNumber)
         {
             return startDate.AddMonths(occurrenceNumber);
         }

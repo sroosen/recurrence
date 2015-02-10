@@ -6,11 +6,11 @@ namespace Recurrence
 {
     public class OccurrenceEnumerator : IEnumerator<DateTime>
     {
-        private readonly RecurrenceType _recurrenceType;
+        private readonly IRecurrenceType _recurrenceType;
         private readonly DateTime _startDate;
         private int _occurrenceNumber;
 
-        public OccurrenceEnumerator(RecurrenceType recurrenceType, DateTime startDate)
+        public OccurrenceEnumerator(IRecurrenceType recurrenceType, DateTime startDate)
         {
             if (recurrenceType == null)
                 throw new ArgumentNullException("recurrenceType");
