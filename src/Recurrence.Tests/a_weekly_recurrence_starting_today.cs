@@ -11,7 +11,7 @@ namespace Recurrence.Tests
         {
             // arrange
             var occurrences =
-                Recur.EveryWeek().StartingToday();
+                Recur.Weekly().StartingToday();
             
             // act
             var capturedOccurrences = new List<DateTime>();

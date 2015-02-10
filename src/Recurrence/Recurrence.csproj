@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="YearlyRecurrenceType.cs" />
+    <Compile Include="QuarterlyRecurrenceType.cs" />
     <Compile Include="OccurrenceEnumerable.cs" />
     <Compile Include="OccurrenceEnumerator.cs" />
     <Compile Include="Recur.cs" />

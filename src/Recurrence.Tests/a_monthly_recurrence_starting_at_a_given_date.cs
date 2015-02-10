@@ -11,7 +11,7 @@ namespace Recurrence.Tests
         {
             // arrange
             var occurrences =
-                Recur.EveryMonth().StartingFrom(new DateTime(1980, 1, 1));
+                Recur.Monthly().StartingFrom(new DateTime(1980, 1, 1));
             
             // act
             var capturedOccurrences = new List<DateTime>();

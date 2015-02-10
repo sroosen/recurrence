@@ -4,14 +4,14 @@ using Xunit;
 
 namespace Recurrence.Tests
 {
-    public class a_monthly_recurrence_starting_today
+    public class a_yearly_recurrence_starting_today
     {
         [Fact]
-        public void returns_the_list_of_monthly_occurrences_starting_with_today()
+        public void returns_the_list_of_yearly_occurrences_starting_with_today()
         {
             // arrange
             var occurrences =
-                Recur.Monthly().StartingToday();
+                Recur.Yearly().StartingToday();
             
             // act
             var capturedOccurrences = new List<DateTime>();
@@ -27,8 +27,8 @@ namespace Recurrence.Tests
             var expectedOccurrences = new[]
             {
                 DateTime.Today,
-                DateTime.Today.AddMonths(1),
-                DateTime.Today.AddMonths(2)
+                DateTime.Today.AddYears(1),
+                DateTime.Today.AddYears(2)
             };
             Assert.Equal(expectedOccurrences, capturedOccurrences);
         }

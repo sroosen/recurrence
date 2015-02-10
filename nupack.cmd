@@ -1,0 +1,1 @@
+src\.nuget\NuGet.exe pack src\Recurrence\Recurrence.csproj -Prop Configuration=Release

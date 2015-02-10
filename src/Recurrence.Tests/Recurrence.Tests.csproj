@@ -44,9 +44,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="a_quarterly_recurrence_starting_at_the_end_of_a_month.cs" />
     <Compile Include="a_monthly_recurrence_starting_at_the_end_of_a_month.cs" />
     <Compile Include="a_monthly_recurrence_starting_today.cs" />
     <Compile Include="a_monthly_recurrence_starting_at_a_given_date.cs" />
+    <Compile Include="a_quarterly_recurrence_starting_today.cs" />
+    <Compile Include="a_quarterly_recurrence_starting_at_a_given_date.cs" />
+    <Compile Include="a_yearly_recurrence_starting_at_a_leap_day.cs" />
+    <Compile Include="a_yearly_recurrence_starting_at_a_given_date.cs" />
+    <Compile Include="a_yearly_recurrence_starting_today.cs" />
     <Compile Include="a_weekly_recurrence_starting_today.cs" />
     <Compile Include="a_weekly_recurrence_starting_at_a_given_date.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
