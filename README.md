@@ -7,7 +7,7 @@ A library that provides basic recurrence functionaltity.
 ```csharp
 var occurrences = Recur.EveryWeek().StartingToday();
 
-foreach (var occurrence in Recur.EveryWeek().StartingToday())
+foreach (var occurrence in occurrences)
 {
     Console.WriteLine(occurrence); // occurrence is a DateTime instance
 }
