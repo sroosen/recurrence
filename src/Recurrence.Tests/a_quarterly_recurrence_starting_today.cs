@@ -32,5 +32,16 @@ namespace Recurrence.Tests
             };
             Assert.Equal(expectedOccurrences, capturedOccurrences);
         }
+
+        [Fact]
+        public void returns_the_first_occurrence_after_today()
+        {
+            // act
+            var next =
+                Recur.Quarterly().StartingToday().Next();
+
+            // assert
+            Assert.Equal(DateTime.Today.AddMonths(3), next);
+        }
     }
 }

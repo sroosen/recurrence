@@ -32,5 +32,19 @@ namespace Recurrence.Tests
             };
             Assert.Equal(expectedOccurrences, capturedOccurrences);
         }
+
+        [Fact]
+        public void returns_the_first_occurrence_after_that_date()
+        {
+            // arrange
+            var startDate = new DateTime(1980, 1, 1);
+
+            // act
+            var next =
+                Recur.Yearly().StartingFrom(startDate).Next();
+
+            // assert
+            Assert.Equal(new DateTime(1981, 1, 1), next);
+        }
     }
 }

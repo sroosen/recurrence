@@ -32,5 +32,19 @@ namespace Recurrence.Tests
             };
             Assert.Equal(expectedOccurrences, capturedOccurrences);
         }
+
+        [Fact]
+        public void returns_the_next_occurrence_taking_into_account_the_number_of_days_in_each_month()
+        {
+            // arrange
+            var startDate = new DateTime(1980, 1, 31);
+
+            // act
+            var next =
+                Recur.Monthly().StartingFrom(startDate).Next();
+
+            // assert
+            Assert.Equal(new DateTime(1980, 2, 29), next);
+        }
     }
 }

@@ -34,5 +34,19 @@ namespace Recurrence.Tests
             };
             Assert.Equal(expectedOccurrences, capturedOccurrences);
         }
+
+        [Fact]
+        public void returns_the_next_occurrence_taking_into_account_non_leap_years()
+        {
+            // arrange
+            var startDate = new DateTime(1980, 2, 29);
+
+            // act
+            var next =
+                Recur.Yearly().StartingFrom(startDate).Next();
+
+            // assert
+            Assert.Equal(new DateTime(1981, 2, 28), next);
+        }
     }
 }

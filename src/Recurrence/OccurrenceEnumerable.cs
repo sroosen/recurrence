@@ -28,6 +28,11 @@ namespace Recurrence
             return this;
         }
 
+        public DateTime Next()
+        {
+            return _recurrenceType.GetOccurrence(_startDate, 1);
+        }
+
         public IEnumerator<DateTime> GetEnumerator()
         {
             return new OccurrenceEnumerator(_recurrenceType, _startDate);
