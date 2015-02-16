@@ -43,5 +43,15 @@ namespace Recurrence.Tests
             // assert
             Assert.Equal(DateTime.Today.AddDays(7), next);
         }
+
+        [Fact]
+        public void returns_a_specific_occurrence()
+        {
+            // act
+            var third = Recur.Weekly().StartingToday().Ocurrence(2);
+
+            // assert
+            Assert.Equal(DateTime.Today.AddDays(14), third);
+        }
     }
 }

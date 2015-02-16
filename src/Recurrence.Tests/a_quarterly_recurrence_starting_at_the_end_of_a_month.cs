@@ -46,5 +46,18 @@ namespace Recurrence.Tests
             // assert
             Assert.Equal(new DateTime(1980, 4, 30), next);
         }
+
+        [Fact]
+        public void returns_a_specific_occurrence_taking_into_account_the_number_of_days_in_each_month()
+        {
+            // arrange
+            var startDate = new DateTime(1980, 1, 31);
+
+            // act
+            var second = Recur.Quarterly().StartingFrom(startDate).Ocurrence(1);
+
+            // assert
+            Assert.Equal(new DateTime(1980, 4, 30), second);
+        }
     }
 }

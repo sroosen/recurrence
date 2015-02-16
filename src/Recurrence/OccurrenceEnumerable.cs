@@ -33,6 +33,11 @@ namespace Recurrence
             return _recurrenceType.GetOccurrence(_startDate, 1);
         }
 
+        public DateTime Ocurrence(int number)
+        {
+            return _recurrenceType.GetOccurrence(_startDate, number);
+        }
+
         public IEnumerator<DateTime> GetEnumerator()
         {
             return new OccurrenceEnumerator(_recurrenceType, _startDate);

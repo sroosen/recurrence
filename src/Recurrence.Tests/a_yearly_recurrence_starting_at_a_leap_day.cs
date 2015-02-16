@@ -48,5 +48,18 @@ namespace Recurrence.Tests
             // assert
             Assert.Equal(new DateTime(1981, 2, 28), next);
         }
+
+        [Fact]
+        public void returns_a_specific_occurrence_taking_into_account_non_leap_years()
+        {
+            // arrange
+            var startDate = new DateTime(1980, 2, 29);
+
+            // act
+            var third = Recur.Yearly().StartingFrom(startDate).Ocurrence(2);
+
+            // assert
+            Assert.Equal(new DateTime(1982, 2, 28), third);
+        }
     }
 }

@@ -46,5 +46,18 @@ namespace Recurrence.Tests
             // assert
             Assert.Equal(new DateTime(1981, 1, 1), next);
         }
+
+        [Fact]
+        public void returns_a_specific_occurrence()
+        {
+            // arrange
+            var startDate = new DateTime(1980, 1, 1);
+
+            // act
+            var third = Recur.Yearly().StartingFrom(startDate).Ocurrence(2);
+
+            // assert
+            Assert.Equal(new DateTime(1982, 1, 1), third);
+        }
     }
 }

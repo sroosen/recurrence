@@ -43,5 +43,15 @@ namespace Recurrence.Tests
             // assert
             Assert.Equal(DateTime.Today.AddMonths(1), next);
         }
+
+        [Fact]
+        public void returns_a_specific_occurrence()
+        {
+            // act
+            var third = Recur.Monthly().StartingToday().Ocurrence(2);
+
+            // assert
+            Assert.Equal(DateTime.Today.AddMonths(2), third);
+        }
     }
 }
