@@ -18,19 +18,21 @@ foreach (var occurrence in occurrences)
 Other recurrence types:
 
 ```csharp
-Recur.EveryNumberOfWeeks(numberOfWeeks);
 Recur.Monthly();
-Recur.EveryNumberOfMonths(numberOfMonths);
 Recur.Quarterly();
-Recur.EveryNumberOfQuarters(numberOfQuarters);
 Recur.Yearly();
+Recur.EveryNumberOfWeeks(numberOfWeeks);
+Recur.EveryNumberOfMonths(numberOfMonths);
+Recur.EveryNumberOfQuarters(numberOfQuarters);
 Recur.EveryNumberOfYears(numberOfYears);
 ```
 
 Get first occurrence after a specific date:
 
 ```csharp
-DateTime occurrence = Recur.EveryNumberOfMonths(3).StartingFrom(new DateTime(1980, 1, 1)).Next();
+DateTime occurrence = Recur.EveryNumberOfMonths(3)
+	.StartingFrom(new DateTime(1980, 1, 1))
+	.Next();
 
 Console.WriteLine(occurrence); // outputs the first of april
 ```
