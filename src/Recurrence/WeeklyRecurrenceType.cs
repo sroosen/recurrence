@@ -6,7 +6,7 @@ namespace Recurrence
     {
         public DateTime GetOccurrence(DateTime startDate, int occurrenceNumber)
         {
-            return startDate.AddDays(occurrenceNumber*7);
+            return startDate.AddDays(occurrenceNumber * 7);
         }
     }
 }

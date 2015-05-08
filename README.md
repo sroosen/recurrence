@@ -21,14 +21,20 @@ Other recurrence types:
 Recur.Monthly();
 Recur.Quarterly();
 Recur.Yearly();
+Recur.EveryNumberOfWeeks(numberOfWeeks);
+Recur.EveryNumberOfMonths(numberOfMonths);
+Recur.EveryNumberOfQuarters(numberOfQuarters);
+Recur.EveryNumberOfYears(numberOfYears);
 ```
 
 Get first occurrence after a specific date:
 
 ```csharp
-DateTime occurrence = Recur.Monthly().StartingFrom(new DateTime(1980, 1, 1)).Next();
+DateTime occurrence = Recur.EveryNumberOfMonths(3)
+	.StartingFrom(new DateTime(1980, 1, 1))
+	.Next();
 
-Console.WriteLine(occurrence); // outputs the first of february
+Console.WriteLine(occurrence); // outputs the first of april
 ```
 
-The feature set is kept small because currently it's allI have a need for. Feel free to fork this. I accept pull requests :-)
+The feature set is kept small because currently it's all I have a need for. Feel free to fork this. I accept pull requests :-)

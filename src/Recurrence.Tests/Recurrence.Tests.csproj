@@ -44,6 +44,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="an_every_number_of_months_recurrence_starting_at_a_given_date.cs" />
+    <Compile Include="an_every_number_of_months_recurrence_starting_at_the_end_of_a_month.cs" />
+    <Compile Include="an_every_number_of_months_recurrence_starting_today.cs" />
+    <Compile Include="an_every_number_of_quarters_recurrence_starting_at_a_given_date.cs" />
+    <Compile Include="an_every_number_of_quarters_recurrence_starting_at_the_end_of_the_month.cs" />
+    <Compile Include="an_every_number_of_quarters_recurrence_starting_today.cs" />
+    <Compile Include="an_every_number_of_weeks_recurrence_starting_at_a_given_date.cs" />
+    <Compile Include="an_every_number_of_weeks_recurrence_starting_today.cs" />
+    <Compile Include="an_every_number_of_years_recurrence_starting_at_a_given_date.cs" />
+    <Compile Include="an_every_number_of_years_recurrence_starting_at_a_leap_day.cs" />
+    <Compile Include="an_every_number_of_years_recurrence_starting_today.cs" />
     <Compile Include="a_quarterly_recurrence_starting_at_the_end_of_a_month.cs" />
     <Compile Include="a_monthly_recurrence_starting_at_the_end_of_a_month.cs" />
     <Compile Include="a_monthly_recurrence_starting_today.cs" />
